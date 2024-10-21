@@ -39,10 +39,10 @@ Programming language to use: Python
 
 Pseudocode:
 * Read in both real news and fake news and remove unnecessary elements in the data to make it easier to work with.
-* Convert text into numerical values using techniques like TF-IDF (Term Frequency-Inverse Document Frequency)
+* Convert text into numerical values using techniques like TF-IDF (Term Frequency-Inverse Document Frequency).
 * Train-Test Split: Split your dataset into training and testing subsets.
-* Train the Model: Feed the preprocessed data to the selected model. Ensure the model learns to differentiate between real and fake news
-* Predict the score
+* Train the Model: Feed the preprocessed data to the selected model. Ensure the model learns to differentiate between real and fake news.
+* Predict the score.
 
 ## Challenges
 The detector may perform well on news articles that follow a similar structure and language but there will be limitation on less structured content (e.g., social media posts).
@@ -51,7 +51,7 @@ The dataset is primarily structured as a binary classification, where articles a
 
 ## What next?
 Check if it is possible to integrated the fake news detactor on other platform as well to be able to flag news or articles as FAKE or REAL.
-Use Additional Datasets to incorporate more diverse datasets to cover different domains,
+Use Additional Datasets to incorporate more diverse datasets to cover different domains.
 
 ## Acknowledgments
 
