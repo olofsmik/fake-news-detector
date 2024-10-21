@@ -31,7 +31,7 @@ Dataset that is used: ISOT Fake News Dataset, taken from real world sources:
 | Paragraph   | Date it was published        |
 
 AI methods:
-Machine Learning Models
+* Machine Learning Models
  - Logistic Regression
  - Decision Tree Classifier
  - Gradient Boosting Classifier
