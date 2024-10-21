@@ -2,26 +2,27 @@
 created by Reaktor Innovations and University of Helsinki. 
 Copy the template, paste it to your GitHub README and edit! -->
 
-# Project Title
+# Fake news detector
 
 Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
-
+ This project aim to detect and recognise fake news
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+False or misleading information that is reported as news are called fake news and has become a significant problem in modern internet culture, specifically in blogs, online publications, and social networking platforms. It occurs everyday and spreads like wildfire, and people share it without confirming it. Fake news is often used to influence public opinion, elections, or other political agendas. Or it is created to generate ad revenue by attracting clicks and views (clickbait). I believe it is hard these days to know what to trust and even sometimes hard to know if it is ok to click on a certain link.  
 
 This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+* Logistic Regression
+* Decision Tree Classifier
+* Machine learning (NLP)
 
 
 ## How is it used?
+You copy the url to the content and paste it into the fake news detector which is a separate tool that response with FAKE OR REAL.
+This could be used by all users
 
 Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
 
@@ -52,23 +53,35 @@ main()
 
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+
+Dataset that is used: ISOT Fake News Dataset, taken from real world sources:
+[https://www.kaggle.com/datasets/csmalarkodi/isot-fake-news-dataset]
 
 | Syntax      | Description |
 | ----------- | ----------- |
 | Header      | Title       |
 | Paragraph   | Text        |
+| Paragraph   | Subject        |
+| Paragraph   | Date it was published        |
+
+* Read in both real news and fake news and remove unnecessary elements in the data to make it easier to work with.
+* Convert text into numerical features using techniques like TF-IDF (Term Frequency-Inverse Document Frequency)
+* Train-Test Split: Split your dataset into training and testing subsets.
+* Train the Model: Feed the preprocessed data to the selected model. Ensure the model learns to differentiate between real and fake news based on the textual features.
+* Predict the store
+
+AI methods:
+Machine Learning Models - Logistic Regression
+Deep Learning Models - LSTM (Long Short-Term Memory)
 
 ## Challenges
+The detector may perform well on news articles that follow a similar structure and language but there will be limitation on less structured content (e.g., social media posts).
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+The dataset is primarily structured as a binary classification, where articles are either labeled as "real" or "fake." This simplifies the problem but fake news is a complex phenomenon that often involves shades of truth which is ignored with this solution.
 
 ## What next?
-
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
-
+Create a web app where users can paste news, links or text and to get the results.
+And the check if it is possible to integrated the fake news detactor on other platform as well to be able to flag news or articles as FAKE or REAL.
 
 ## Acknowledgments
 
