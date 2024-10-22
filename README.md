@@ -20,8 +20,8 @@ Everybody that reading stuff online will be potential users. If you are uncertai
 
 ## Data sources and AI methods
 
-Dataset that is used: ISOT Fake News Dataset, taken from real world sources:
-[https://www.kaggle.com/datasets/csmalarkodi/isot-fake-news-dataset]
+Dataset that is used: ISOT Fake News Dataset, which is a dataset that is taken from real world sources:
+https://www.kaggle.com/datasets/csmalarkodi/isot-fake-news-dataset
 
 | Syntax      | Description |
 | ----------- | ----------- |
